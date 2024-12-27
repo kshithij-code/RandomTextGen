@@ -5,6 +5,18 @@
     <title>Title</title>
 </head>
 <body>
-<h1>hello world</h1>
+<table>
+    <thead>
+    <tr>
+        <th>No.</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="list:${List}">
+        <td th:text="${list}"></td>
+    </tr>
+    </tbody>
+</table>
+<a th:href="@{/add}">ADD</a>
 </body>
 </html>
