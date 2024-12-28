@@ -5,7 +5,7 @@
     <title>Login</title>
 </head>
 <body>
-<form th:action="@{/auth0/login}" th:object="${user}" method="post">
+<form th:action="@{/auth0/register}" th:object="${user}" method="post">
     <input type="text" placeholder="email" th:field="*{email}">
     <input type="text" placeholder="name" th:field="*{username}">
     <input type="password" placeholder="password" th:field="*{password}">

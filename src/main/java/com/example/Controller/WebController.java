@@ -17,7 +17,7 @@ public class WebController {
             list1.add(i);
         }
     }
-    @GetMapping(value = "/")
+    @GetMapping(value = "/index")
     public String index(Model model){
 
         System.out.println(list1);

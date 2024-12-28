@@ -6,6 +6,15 @@ import org.springframework.data.mongodb.core.mapping.Field;
 
 @Document(collection = "UserAndPassword")
 public class User {
+    @Override
+    public String toString() {
+        return "User{" +
+                "email='" + email + '\'' +
+                ", username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                '}';
+    }
+
     public String getEmail() {
         return email;
     }

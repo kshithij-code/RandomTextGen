@@ -13,6 +13,9 @@ public class UserService {
     public User getByEmail(String email){
         return userRepository.findById(email).orElse(null);
     }
+    public boolean verfyUser(String email){
+        return userRepository.existsById(email);
+    }
     public User createUser(User user){
         return userRepository.save(user);
     }
