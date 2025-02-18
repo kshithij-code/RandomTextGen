@@ -33,6 +33,6 @@ public class UserAuthentication {
     @PostMapping("/register")
     private String register(@ModelAttribute("user") User user){
         userService.createUser(user);
-        return "login";
+        return "login succ";
     }
 }
