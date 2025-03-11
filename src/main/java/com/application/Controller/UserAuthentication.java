@@ -18,7 +18,7 @@ public class UserAuthentication {
     @GetMapping
     private String login(Model model){
         model.addAttribute("user",new User());
-        return "login";
+        return "login1";
     }
     @PostMapping("/login")
     private String login(@ModelAttribute("user") User user,Model model){
